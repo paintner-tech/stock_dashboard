@@ -1,0 +1,58 @@
+{
+  "_hinweise": [
+    "Diese Datei gehört in denselben Ordner wie buy_and_hold_score.py.",
+    "Nach Änderungen das Dashboard neu starten. Zahlen ohne Anführungszeichen schreiben und für Dezimalzahlen einen Punkt verwenden.",
+    "Die Felder _hinweise dienen der Erklärung. Das Dashboard ignoriert sie."
+  ],
+  "gesamt": {
+    "_hinweise": [
+      "Qualität und Bewertung sind Anteile in ganzen Prozent. Beide Werte müssen positiv sein und zusammen 100 ergeben.",
+      "startwert verschiebt den Gesamtscore um feste Punkte. 0 ist der Standard, -5 ist strenger und +5 großzügiger.",
+      "Beispiel: 72 errechnete Punkte werden bei startwert -5 zu 67. Die Teilwerte bleiben gleich. Anschließend greifen der Qualitätsdeckel und die Grenzen von 0 bis 100."
+    ],
+    "qualitaet_prozent": 60,
+    "bewertung_prozent": 40,
+    "startwert": 0
+  },
+  "qualitaet": {
+    "_hinweise": [
+      "mindestanzahl_kennzahlen gibt an, wie viele der drei Qualitätskennzahlen vorliegen müssen. Mit 3 verlangst du vollständige Qualitätsdaten. Bei Lücken gibt es dann keinen Gesamtscore.",
+      "Liegt die ungerundete Qualität unter deckel_schwelle, ist der Gesamtscore auf deckel_maximum begrenzt. Beide Werte dürfen zwischen 0 und 100 liegen.",
+      "Strengeres Beispiel: deckel_schwelle auf 50 und deckel_maximum auf 55 setzen."
+    ],
+    "mindestanzahl_kennzahlen": 2,
+    "deckel_schwelle": 40,
+    "deckel_maximum": 59
+  },
+  "gewichte_qualitaet": {
+    "_hinweise": [
+      "Positive relative Gewichte innerhalb der Qualität. Die Summe ist frei.",
+      "Fehlt eine Kennzahl, zählen die übrigen stärker. Fehlt etwa der ROE, zählen Marge und Verschuldung im Verhältnis 25 zu 20."
+    ],
+    "profitMargins": 25,
+    "returnOnEquity": 15,
+    "debtToEquity": 20
+  },
+  "gewichte_bewertung": {
+    "_hinweise": [
+      "Positive relative Gewichte innerhalb der Bewertung. 30 zu 10 bedeutet 75 % KGV und 25 % KBV, wenn beide Kennzahlen vorliegen.",
+      "Ohne KBV zählt das KGV allein. Erkannte Verluste setzen den Bewertungsteil auf 0."
+    ],
+    "pe": 30,
+    "priceToBook": 10
+  },
+  "stuetzpunkte": {
+    "_hinweise": [
+      "Jedes Paar besteht aus [Kennzahlwert, Punkte]. Je Kennzahl sind mindestens zwei Paare nötig. Die Kennzahlwerte müssen aufsteigen. Punkte dürfen zwischen 0 und 100 liegen.",
+      "Zwischen zwei Paaren wird linear gerechnet. Außerhalb der Spanne gelten die Punkte des jeweiligen Randes.",
+      "Beispiel KGV: [16, 75] und [24, 40] ergeben bei einem KGV von 20 genau 57.5 Punkte.",
+      "Strengeres KGV: [[8, 100], [13, 75], [20, 40], [30, 0]].",
+      "Nettomarge und ROE sind Dezimalzahlen. 0.15 entspricht 15 %. Bei debtToEquity entspricht dagegen 40 einem Wert von 40 %. KGV und KBV sind Verhältniszahlen."
+    ],
+    "profitMargins": [[0, 0], [0.08, 35], [0.15, 65], [0.30, 100]],
+    "returnOnEquity": [[0, 0], [0.08, 35], [0.15, 65], [0.25, 100]],
+    "debtToEquity": [[0, 100], [40, 85], [80, 60], [150, 25], [250, 0]],
+    "pe": [[10, 100], [16, 75], [24, 40], [35, 0]],
+    "priceToBook": [[1.2, 100], [2.5, 75], [4.5, 40], [8, 0]]
+  }
+}

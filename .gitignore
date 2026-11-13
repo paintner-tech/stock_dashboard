@@ -1,0 +1,14 @@
+# Abhängigkeiten / Libraries
+node_modules/
+venv/
+env/
+__pycache__/
+
+# Betriebssystem-Dateien
+.DS_Store
+Thumbs.db
+
+# Build-Ergebnisse & Logs
+dist/
+build/
+*.log

@@ -1,0 +1,32 @@
+{
+    "active_category": "Beobachten",
+    "categories": {
+        "Tech": [
+            "AAPL",
+            "MSFT",
+            "GOOGL",
+            "AMZN",
+            "NVDA",
+            "TSLA",
+            "IBM"
+        ],
+        "Versorger": [
+            "EOAN.DE",
+            "RWE.DE",
+            "JNJ",
+            "PG",
+            "FRO"
+        ],
+        "Beobachten": [
+            "FRO",
+            "GOOG",
+            "R3NK.DE",
+            "RHM.DE",
+            "BMW.DE",
+            "NVDA"
+        ]
+    },
+    "chart_type": "Linie",
+    "timeframe": "6mo",
+    "cache_ttl_minutes": 60
+}
