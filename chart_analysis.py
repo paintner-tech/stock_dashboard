@@ -241,8 +241,6 @@ def show_chart_analysis_dialog(ticker, initial_hist, info):
     recent_df = df.tail(90)
 
     #support_level = recent_df["Low"].min()
-    #resistance_level = recent_df["High"].max()
-    # Wir nutzen Quantile statt .min()/.max(), um extreme Ausreißer zu glätten
     support_level = recent_df["Low"].quantile(0.05)
     resistance_level = recent_df["High"].quantile(0.95)
 
