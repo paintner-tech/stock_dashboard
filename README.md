@@ -51,7 +51,7 @@ Chartanalyse-Modul: Automatisiert die Auswertung von Kursdaten und übersetzt te
    streamlit run app.py
    ```
 
-   Mehr Informationen finden Sie in unserer [Dokumentation](docs/crashkurs_kennzahlen.md).
+   Mehr Informationen finden Sie in unserer [Dokumentation](docs/Doku.md).
 
 
    
