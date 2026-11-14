@@ -2,7 +2,8 @@
 
 Willkommen in der Dokumentation des **Aktien-Dashboards**! Diese Seite dient als Nachschlagewerk für technische Begriffe, Berechnungsformeln, Indikatoren und methodische Hintergründe, die im Projekt verwendet werden.
 
-Mehr Detail ist hier zu finden: [Mathematische Grundlagen](Math.md)
+---
+Mehr Detail ist hier zu finden: [Grundlagen](Math.md)
 ---
 
 ## 📈 1. Technische Chartanalyse
