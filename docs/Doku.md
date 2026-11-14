@@ -31,13 +31,6 @@ Willkommen in der Dokumentation des **Aktien-Dashboards**! Diese Seite dient als
 
 ---
 
-## 🧮 1.2 Mathematische Grundlagen & Statistik
-
-### Was ist ein Quantil?
-Ein Quantil ist ein statistischer Trennwert, der eine sortierte Reihe von Daten in Teile teilt. 
-* *Beispiel (5 %-Quantil):* Der Wert, unter dem genau 5 % aller Datenpunkte liegen (95 % sind höher). Das hilft in der Finanzanalyse, extreme statistische Ausreißer von echten Trendzonen zu trennen.
-
----
 *Hinweis: Diese Dokumentation wird fortlaufend ergänzt.*
 
 ### 1.3 Bollinger Bänder
