@@ -21,6 +21,43 @@ Willkommen in der Dokumentation des **Aktien-Dashboards**! Diese Seite dient als
 ### Gleitende Durchschnitte (SMA 50 / SMA 200)
 * Zeigen den durchschnittlichen Schlusskurs über einen definierten Zeitraum (50 oder 200 Perioden). Dienen zur Bestimmung des Übergeordneten Trends (Kurs über SMA = positiv).
 
+### Bollinger Bänder – einfach erklärt
+
+Bollinger Bänder sind ein technischer Indikator, der zeigt, wie stark sich ein Aktienkurs bewegt und wie weit der aktuelle Kurs von seinem Durchschnitt entfernt ist.
+
+Die Bänder bestehen aus drei Linien:
+
+- **Mittleres Band:** Der durchschnittliche Aktienkurs der letzten 20 Handelstage.
+- **Oberes Band:** Zeigt einen Bereich oberhalb des Durchschnitts.
+- **Unteres Band:** Zeigt einen Bereich unterhalb des Durchschnitts.
+
+#### Wie funktionieren Bollinger Bänder?
+
+Die Bollinger Bänder passen sich automatisch an die Schwankungen des Aktienkurses an.
+
+- **Enge Bänder:** Der Aktienkurs bewegt sich relativ ruhig. Die Schwankungen sind gering.
+- **Breite Bänder:** Der Aktienkurs schwankt stärker. Die Volatilität ist hoch.
+- **Kurs am oberen Band:** Die Aktie zeigt aktuell eine relative Stärke.
+- **Kurs am unteren Band:** Die Aktie zeigt aktuell eine relative Schwäche.
+
+#### Wie kann man Bollinger Bänder interpretieren?
+
+Bollinger Bänder helfen dabei, die aktuelle Kurssituation besser einzuschätzen.
+
+Ein Kurs am unteren Band kann beispielsweise auf eine kurzfristige Schwäche hindeuten. Das bedeutet aber nicht automatisch, dass die Aktie günstig ist oder steigen wird.
+
+In starken Aufwärtstrends kann eine Aktie längere Zeit am oberen Band entlanglaufen. In Abwärtstrends kann sie entsprechend am unteren Band bleiben.
+
+### Verwendung im Aktien-Dashboard
+
+Im Dashboard werden Bollinger Bänder verwendet, um:
+
+- die aktuelle Position des Aktienkurses innerhalb seiner Schwankungsbreite zu erkennen
+- Phasen mit geringer oder hoher Volatilität sichtbar zu machen
+- mögliche kurzfristige Übertreibungen im Kursverlauf zu erkennen
+- die technische Analyse zusammen mit RSI und gleitenden Durchschnitten zu unterstützen
+
+**Wichtig:** Bollinger Bänder sind kein eigenständiges Kauf- oder Verkaufssignal. Sie helfen bei der Einschätzung der aktuellen Marktsituation, ersetzen aber keine fundamentale Bewertung der Aktie.
 ---
 
 ## 🧾 1.1 Fundamentaldaten & Kennzahlen
