@@ -40,6 +40,53 @@ Ein Quantil ist ein statistischer Trennwert, der eine sortierte Reihe von Daten 
 ---
 *Hinweis: Diese Dokumentation wird fortlaufend ergänzt.*
 
+### 1.3 Bollinger Bänder
+
+Die Bollinger Bänder sind ein technischer Indikator zur Analyse von Kursbewegungen und Volatilität. Sie zeigen, wie weit sich der aktuelle Aktienkurs von seinem gleitenden Durchschnitt entfernt hat und wie stark die Kursschwankungen momentan sind.
+
+Die Bollinger Bänder bestehen aus drei Linien:
+
+- **Mittleres Band:** Einfacher gleitender Durchschnitt (SMA) der letzten 20 Schlusskurse.
+- **Oberes Band:** SMA 20 plus zwei Standardabweichungen.
+- **Unteres Band:** SMA 20 minus zwei Standardabweichungen.
+
+#### Berechnung
+
+Das Dashboard verwendet die klassische Berechnung der Bollinger Bänder mit einem Zeitraum von 20 Perioden und einem Faktor von 2.
+
+```python
+# Mittleres Band: SMA 20
+df["BB_Middle"] = df["Close"].rolling(
+    window=20
+).mean()
+
+# Standardabweichung der letzten 20 Schlusskurse
+std = df["Close"].rolling(
+    window=20
+).std()
+
+# Oberes und unteres Band
+df["BB_Upper"] = df["BB_Middle"] + (std * 2)
+df["BB_Lower"] = df["BB_Middle"] - (std * 2)
+```
+
+Die Standardabweichung wird mit der Pandas-Standardmethode berechnet (Stichproben-Standardabweichung).
+
+#### Interpretation
+
+- **Kurs am unteren Band:** Der Kurs befindet sich relativ weit unterhalb seines Durchschnitts. Eine mögliche technische Gegenbewegung kann beobachtet werden.
+- **Kurs am oberen Band:** Der Kurs befindet sich relativ weit oberhalb seines Durchschnitts. Eine mögliche kurzfristige Überdehnung kann vorliegen.
+- **Enge Bänder:** Die Volatilität ist gering. Eine Phase niedriger Schwankungsbreite kann einer stärkeren Kursbewegung vorausgehen.
+- **Weite Bänder:** Die Volatilität ist hoch und die Kursschwankungen sind ausgeprägter.
+
+#### Wichtige Hinweise
+
+Ein Berühren oder Überschreiten der Bollinger Bänder ist kein automatisches Kauf- oder Verkaufssignal.
+
+In starken Aufwärts- oder Abwärtstrends kann sich der Kurs über längere Zeit entlang eines äußeren Bandes bewegen. Die Bänder sollten deshalb immer zusammen mit anderen Indikatoren wie RSI, SMA 50 und SMA 200 betrachtet werden.
+
+Die Bollinger Bänder dienen ausschließlich der technischen Analyse und stellen keine eigenständige Anlageentscheidung dar.
+
 ## ⭐ 2. So funktionieren die Scores
 
 Das Dashboard zeigt drei Scores von **0 bis 100 Punkten**. Der Buy-&-Hold-Score trennt Unternehmensqualität und Aktienbewertung. Der Buffett-Score prüft ausgewählte Fundamentalkennzahlen anhand fester Schwellen. Der Trading-Score bewertet den Kursverlauf.
