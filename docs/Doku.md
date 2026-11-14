@@ -57,7 +57,7 @@ Im Dashboard werden Bollinger Bänder verwendet, um:
 - mögliche kurzfristige Übertreibungen im Kursverlauf zu erkennen
 - die technische Analyse zusammen mit RSI und gleitenden Durchschnitten zu unterstützen
 
-**Wichtig:** Bollinger Bänder sind kein eigenständiges Kauf- oder Verkaufssignal. Sie helfen bei der Einschätzung der aktuellen Marktsituation, ersetzen aber keine fundamentale Bewertung der Aktie.
+*Wichtig:* Bollinger Bänder sind kein eigenständiges Kauf- oder Verkaufssignal. Sie helfen bei der Einschätzung der aktuellen Marktsituation, ersetzen aber keine fundamentale Bewertung der Aktie.
 ---
 
 ## 🧾 1.1 Fundamentaldaten & Kennzahlen
